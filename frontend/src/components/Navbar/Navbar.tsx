@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-// import AppleFastLogo from "../../assets/apple-fast-logo.png";
+import PrestigioLogo from "../../assets/prestigio.jpg";
 
 export default function Header(): JSX.Element {
   return (
@@ -15,13 +15,16 @@ export default function Header(): JSX.Element {
     >
       <Container>
         <Navbar.Brand href="/home">
-          {/* <img
-            src={AppleFastLogo}
-            style={{ width: "100px", height: "50px", margin: "0 30px 0 0" }}
-          /> */}
+          <img
+            src={PrestigioLogo}
+            style={{ width: "70px", height: "70px", margin: "0 30px 0 0" }}
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          style={{ fontSize: "20px", fontWeight: "bold" }}
+        >
           <Nav className="me-auto">
             <Nav.Link href="/cadastrarProduto">Conheça nossos Pontos</Nav.Link>
             <Nav.Link href="/home">Estoque</Nav.Link>
