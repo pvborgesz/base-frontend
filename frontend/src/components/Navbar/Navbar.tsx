@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import AppleFastLogo from "../../assets/apple-fast-logo.png";
+// import AppleFastLogo from "../../assets/apple-fast-logo.png";
 
 export default function Header(): JSX.Element {
   return (
@@ -15,15 +15,15 @@ export default function Header(): JSX.Element {
     >
       <Container>
         <Navbar.Brand href="/home">
-          <img
+          {/* <img
             src={AppleFastLogo}
             style={{ width: "100px", height: "50px", margin: "0 30px 0 0" }}
-          />
+          /> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/cadastrarProduto">Cadastrar Produto</Nav.Link>
+            <Nav.Link href="/cadastrarProduto">Conheça nossos Pontos</Nav.Link>
             <Nav.Link href="/home">Estoque</Nav.Link>
             <NavDropdown title="Redes Sociais" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
